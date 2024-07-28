@@ -1,0 +1,7 @@
+.css-14mxsc7-MuiDataGrid-root .MuiDataGrid-container--top [role="row"],
+.css-14mxsc7-MuiDataGrid-root .MuiDataGrid-container--bottom [role="row"] {
+  background: #0b132e;
+  svg {
+    color: wheat;
+  }
+}

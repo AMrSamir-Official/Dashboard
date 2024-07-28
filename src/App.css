@@ -1,0 +1,89 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+svg {
+  cursor: pointer;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.child-max-w {
+  overflow: hidden;
+  > * {
+    max-width: calc(100% - 20px) !important;
+  }
+}
+img {
+  object-fit: cover;
+}
+/* scrollbar-dark.css */
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #101c2c73; /* Dark background color */
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* Handle
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+/* background-color: #101c2c;  
+} */
+
+/* Handle on hover */
+::-webkit-scrollbar:hover {
+  background-color: #0e1927; /* Darker background color on hover */
+}
+
+/* Handle when dragging */
+::-webkit-scrollbar-thumb {
+  cursor: grab;
+  background-color: #4a90e2; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Rounded corners of the handle */
+}
+
+/* Handle when dragging on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6cb1f3; /* Lighter color of the scrollbar handle on hover */
+}
+*/ @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

@@ -1,0 +1,58 @@
+import { useState } from "react";
+import Chart from "react-apexcharts";
+
+/* eslint-disable react/jsx-no-undef */
+const Spline = () => {
+  const [options, setOptions] = useState({
+    series: [
+      {
+        name: "series1",
+        data: [31, 40, 28, 51, 42, 109, 100],
+      },
+      {
+        name: "series2",
+        data: [11, 32, 45, 32, 34, 52, 41],
+      },
+    ],
+    chart: {
+      height: 350,
+      type: "area",
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: "smooth",
+    },
+    xaxis: {
+      type: "datetime",
+      categories: [
+        "2022-09-19T00:00:00.000Z",
+        "2022-05-19T01:30:00.000Z",
+        "2023-08-19T02:30:00.000Z",
+        "2023-09-19T03:30:00.000Z",
+        "2024-01-19T04:30:00.000Z",
+        "2024-05-19T05:30:00.000Z",
+        "2024-09-19T06:30:00.000Z",
+      ],
+    },
+    tooltip: {
+      theme: "dark",
+      x: {
+        format: "dd/MM/yy HH:mm",
+      },
+    },
+  });
+  return (
+    <div id="chart">
+      <Chart
+        options={options}
+        series={options.series}
+        type="line"
+        height={350}
+      />
+    </div>
+  );
+};
+
+export default Spline;

@@ -1,0 +1,18 @@
+img.profile {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 50%;
+}
+.ml {
+  margin-left: var(--drawerWidth);
+}
+@media (max-width: 920px) {
+  .ml {
+    margin-left: 0px;
+    > * {
+      max-width: calc(100% - 20px) !important;
+    }
+  }
+}
