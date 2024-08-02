@@ -6,12 +6,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  background: #1f2937 !important;
   overflow: hidden;
 }
  .css-k008qs,
         .css-1i70n0r .MuiDataGrid-container--top [role="row"], .css-1i70n0r .MuiDataGrid-container--bottom [role="row"] {
-          background: #1f2937;
+          background: #1f2937 !important;
       }
 svg {
   cursor: pointer;
